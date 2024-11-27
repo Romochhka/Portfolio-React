@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Tech from "./components/Tech.jsx";
@@ -18,6 +19,14 @@ function App() {
       <Contact/>
     </main>
   </>
+=======
+function App() {
+  return (
+    <>
+        <div className='text-8xl font-bold'>hello world</div>
+    </>
+  )
+>>>>>>> 4921ebcace44a31203642e17919fa75153fee965
 }
 
 export default App
