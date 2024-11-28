@@ -1,4 +1,4 @@
-import {BsGithub, BsLinkedin, BsYoutube} from "react-icons/bs";
+import {BsGithub, BsInstagram, BsLinkedin, BsYoutube} from "react-icons/bs";
 import {useState} from "react";
 import {BiMenu, BiX} from "react-icons/bi";
 
@@ -58,12 +58,17 @@ const Navbar = () => {
                     hover:opacity-100">
                     <BsGithub/>
                 </li>
+                <li className="cursor-pointer text-xl opacity-70
+                    transition-all duration-300 hover:text-orange-500
+                    hover:opacity-100">
+                    <BsInstagram/>
+                </li>
             </ul>
 
             {isOpen ? (
-                <BiX className="block md:hidden text-4xl" onClick={menuOpen} />
+                <BiX className="block md:hidden text-4xl" onClick={menuOpen}/>
             ) : (
-                <BiMenu className="block md:hidden text-4xl" onClick={menuOpen} />
+                <BiMenu className="block md:hidden text-4xl" onClick={menuOpen}/>
             )}
 
             {isOpen && (
@@ -90,14 +95,17 @@ const Navbar = () => {
 
                     <ul className="flex flex-wrap gap-5">
                         <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
-                            <BsYoutube />
+                            <BsYoutube/>
                         </li>
 
                         <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
-                            <BsLinkedin />
+                            <BsLinkedin/>
                         </li>
                         <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
-                            <BsGithub />
+                            <BsGithub/>
+                        </li>
+                        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
+                            <BsInstagram/>
                         </li>
                     </ul>
                 </div>
