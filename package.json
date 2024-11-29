@@ -3,14 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://romocchka.github.io/Portfolio-React/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
-    "homepage": "https://Romocchka.github.io/Portfolio-React/"
-
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "motion": "^11.11.17",
