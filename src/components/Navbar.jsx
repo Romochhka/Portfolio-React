@@ -1,4 +1,4 @@
-import {BsInstagram, BsLinkedin, BsTelegram} from "react-icons/bs";
+import {BsGithub, BsInstagram, BsLinkedin, BsTelegram} from "react-icons/bs";
 import {useState} from "react";
 import {BiMenu, BiX} from "react-icons/bi";
 
@@ -38,28 +38,34 @@ const Navbar = () => {
             <ul className="hidden md:flex gap-5">
                 <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
                     <a href="https://www.instagram.com/Hellssshhhiiittt" target="_blank" rel="noopener noreferrer">
-                        <BsInstagram />
+                        <BsInstagram/>
                     </a>
                 </li>
 
                 <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
-                    <a href="https://www.linkedin.com/in/ramzat-ruslanov-678683267/" target="_blank" rel="noopener noreferrer">
-                        <BsLinkedin />
+                    <a href="https://www.linkedin.com/in/ramzat-ruslanov-678683267/" target="_blank"
+                       rel="noopener noreferrer">
+                        <BsLinkedin/>
                     </a>
                 </li>
 
                 <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
                     <a href="https://t.me/nonameboyiguess" target="_blank" rel="noopener noreferrer">
-                        <BsTelegram />
+                        <BsTelegram/>
+                    </a>
+                </li>
+                <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
+                    <a href="https://github.com/Romochhka" target="_blank" rel="noopener noreferrer">
+                        <BsGithub/>
                     </a>
                 </li>
             </ul>
 
 
             {isOpen ? (
-                <BiX className="block md:hidden text-4xl" onClick={menuOpen} />
+                <BiX className="block md:hidden text-4xl" onClick={menuOpen}/>
             ) : (
-                <BiMenu className="block md:hidden text-4xl" onClick={menuOpen} />
+                <BiMenu className="block md:hidden text-4xl" onClick={menuOpen}/>
             )}
 
             {isOpen && (
@@ -81,13 +87,15 @@ const Navbar = () => {
 
                     <ul className="flex flex-wrap gap-5">
                         <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
-                            <a href="https://www.instagram.com/Hellssshhhiiittt" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/Hellssshhhiiittt" target="_blank"
+                               rel="noopener noreferrer">
                                 <BsInstagram/>
                             </a>
                         </li>
 
                         <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
-                            <a href="https://www.linkedin.com/in/ramzat-ruslanov-678683267/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/ramzat-ruslanov-678683267/" target="_blank"
+                               rel="noopener noreferrer">
                                 <BsLinkedin/>
                             </a>
                         </li>
@@ -96,9 +104,14 @@ const Navbar = () => {
                                 <BsTelegram/>
                             </a>
                         </li>
+                        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
+                            <a href="https://github.com/Romochhka" target="_blank" rel="noopener noreferrer">
+                                <BsGithub/>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                )}
+            )}
 
         </nav>
     )
