@@ -1,4 +1,4 @@
-import image from '/public/photo_2024-10-16_12-53-46.jpg'
+import image from '/public/IMG_7663.jpg'
 import {motion} from "framer-motion";
 
 const Hero = () => {
